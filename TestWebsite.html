@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team CVs</title>
+    <style>
+        body {
+            font-family: 'Pixel', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #00a2a2;
+            color: #ffffff;
+        }
+
+        @font-face {
+            font-family: 'Pixel';
+            src: url(W95FA.otf);
+        }
+
+        header {
+            background-color: #000080;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+            border-top: 5px solid #B1B0C0;
+            border-right: 5px solid #B1B0C0;
+            border-left: 5px solid #B1B0C0;
+        }
+
+        h1 {
+            display: inline-block;
+            margin: 0;
+            color: #ffffff;
+        }
+
+        .cross-image {
+            position: absolute;
+            top: 50%;
+            right: -20px;
+            transform: translateY(-50%);
+            width: 200px;
+            height: 200px;
+        }
+
+        .notepad-background {
+            background-image: url(notepad.png);
+            background-size: contain;
+            background-position: left;
+            background-repeat: no-repeat;
+            padding: 20px; 
+            border-radius: 10px; 
+        }
+
+        nav {
+            background-color: #B1B0C0;
+            display: flex;
+            justify-content: left;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        nav a {
+            color: #000000;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        .team-member {
+            display: flex;
+            flex-direction: row;
+            width: 100vw;
+            min-height: 100vh;
+            box-sizing: border-box;
+            scroll-snap-align: start;
+        }
+
+        .text-section {
+            flex: 1;
+            background-color: transparent;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            text-align: justify;
+            z-index: 1;
+            color: #000000; 
+            padding-bottom: 20px; 
+            max-width: 80%;
+            overflow: hidden;
+        }
+        .image-section {
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h2 {
+            color: #000000;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .pixel-art {
+            width: 70%;
+            height: auto;
+            display: block;
+        }
+
+        .download-link {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        .download-image {
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+            padding: 20px;
+            display: flex;
+            align-items: right;
+            justify-content: right;
+        }
+
+        .team-member:nth-child(even) .download-link {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+        }
+
+        .team-member:nth-child(odd) .download-link {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        .team-member:nth-child(even) .download-image {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+        }
+
+        .team-member:nth-child(odd) .download-image {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+        
+        .team-member:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Team CVs</h1>
+        <img src="CloseMinimizeMaximize.png" alt="Cross" class="cross-image">
+    </header>
+
+    <nav>
+        <a href="#Adarsh-Upadhayay"><u>A</u>darsh</a>
+        <a href="#Keshav-Sharma"><u>K</u>eshav</a>
+        <a href="#Naman-Jain"><u>N</u>aman</a>
+        <a href="#Rishabh-Saxena"><u>R</u>ishabh</a>
+        <a href="#Rohan-Chaudhary"><u>R</u>ohan</a>
+    </nav>
+
+    <section id="Adarsh-Upadhayay" class="team-member">
+        <div class="text-section notepad-background">
+            <h2>Adarsh Upadhayay</h2>
+            <p>----------------------------------------------------------------------</p>
+            <p>Known for his sincerity and good focusand is a motivated Software Engineer with expertise in AI and exceling <br>in problem-solving for peak program performance. Committed to advancing technology  .</p>
+            <p id="Adarsh-Upadhayay-details"></p>
+        </div>
+
+        <div class="image-section">
+            <img src=AdrashImage.png alt="Member 1" class="pixel-art">
+            <a href="AdarshCV.pdf" download>
+                <img src="DownloadCVButton.png" alt="Download CV" class="download-image">
+            </a>
+        </div>
+    </section>
+
+    <section id="Keshav-Sharma" class="team-member">
+        <div class="text-section notepad-background">
+            <h2>Keshav Sharma</h2>
+            <p>----------------------------------------------------------------------</p>
+            <p>Competent Software Engineer in AI, creating creative solutions for optimal performance. Meticulous, cooperative, <br> and adept at problem-solving. Committed to advancing technology, with a personal interest in music and poetry</p>
+            <p id="keshav-sharma-details"></p>
+        </div>
+
+        <div class="image-section">
+            <img src=KeshavImage.png alt="Member 1" class="pixel-art">
+            <a href="KeshavCV.pdf" download>
+                <img src="DownloadCVButton.png" alt="Download CV" class="download-image">
+            </a>
+        </div>
+    </section>
+
+    <section id="Naman-Jain" class="team-member">
+        <div class="text-section notepad-background">
+            <h2>Naman Jain</h2>
+            <p>----------------------------------------------------------------------</p>
+            <p>Detail-oriented Software Engineer with AI proficiency, creating efficient solutions. Meticulous and <br>cooperative, skilled in problem-solving for peak program performance. Committed to advancing technology <br>and continuous learning, with expertise in Database Management Systems</p>
+            <p id="naman-jain-details"></p>
+        </div>
+
+        <div class="image-section">
+            <img src=NamanImage.png alt="Member 1" class="pixel-art">
+            <a href="NamanCV.pdf" download>
+                <img src="DownloadCVButton.png" alt="Download CV" class="download-image">
+            </a>
+        </div>
+    </section>
+
+    <section id="Rishabh-Saxena" class="team-member">
+        <div class="text-section notepad-background">
+            <h2>Rishabh Saxena</h2>
+            <p>----------------------------------------------------------------------</p>
+            <p>Seeking an AI engineer position, I am a dedicated and detail-oriented AIML graduate with expertise in <br>programming, problem-solving, and collaboration. Excited to contribute to innovative projects, apply my AI and <br>ML knowledge, and collaborate with a dynamic team in a growth-oriented organization. Committed to <br>continuous learning and staying updated in the rapidly evolving software engineering landscape.</p>
+            <p id="rishabh-saxena-details"></p>
+        </div>
+
+        <div class="image-section">
+            <img src=RishabhImage.png alt="Member 1" class="pixel-art">
+            <a href="RishabhCV.pdf" download>
+                <img src="DownloadCVButton.png" alt="Download CV" class="download-image">
+            </a>
+        </div>
+    </section>
+
+    <section id="Rohan-Chaudhary" class="team-member">
+        <div class="text-section notepad-background">
+            <h2>Rohan Chaudhary</h2>
+            <p>----------------------------------------------------------------------</p>
+            <p>As a Game Developer and B. Tech Computer Science student at Sharda University, I'm also the President of <br>the Game-Drifters Club. Beyond textbooks, I channel my passion for AR/VR into practical applications, <br>constantly seeking to understand emerging technologies.</p>
+            <p id="rohan-chaudhary-details"></p>
+        </div>
+
+        <div class="image-section">
+            <img src=RohanImage.png alt="Member 1" class="pixel-art">
+            <a href="RohanCV.pdf" download>
+                <img src="DownloadCVButton.png" alt="Download CV" class="download-image">
+            </a>
+        </div>
+    </section>
+
+</body>
+</html>
